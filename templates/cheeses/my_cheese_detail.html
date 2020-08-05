@@ -7,3 +7,14 @@
 	{% if mycheese.description %}
 		<p>{{ mycheese.description }}</p>
 	{% endif %}
+
+	{% if mycheese.country_of_origin %}
+		<p>
+			Country of Origin: {{ mycheese.country_of_origin.name }}
+			<img src="{{ mycheese.country_of_origin.flag }}" />
+		</p>
+	{% endif %}
+
+	<p>
+		<a href="{% url 'cheeses:update' mycheese.slug %}">Update</a>
+	</p>

@@ -37,11 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Apps
+    # Project Apps
     'users.apps.UsersConfig',
     'cheeses.apps.CheesesConfig',
     # Third Party Packages
     'django_extensions',
+    'django_countries',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [

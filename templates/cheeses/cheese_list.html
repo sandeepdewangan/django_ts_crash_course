@@ -1,3 +1,5 @@
+
+<a href="{% url 'cheeses:add' %}">Add Cheese</a>
 <ul>
 	{% for cheese in cheese_list %}
 		<li><a href="{% url 'cheeses:detail' cheese.slug %}">{{ cheese.name }}</a> </li>
