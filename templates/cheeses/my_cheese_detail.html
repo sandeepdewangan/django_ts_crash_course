@@ -1,0 +1,9 @@
+<h2>{{ mycheese.name }}</h2>
+
+	{% if mycheese.firmness %}
+		<p>Firmness: {{ mycheese.get_firmness_display }}</p>
+	{% endif %}
+
+	{% if mycheese.description %}
+		<p>{{ mycheese.description }}</p>
+	{% endif %}
